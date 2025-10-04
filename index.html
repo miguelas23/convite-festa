@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de Presença - Festa de [Seu Nome]</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Festa de Aniversário da Ceiça Andrade!</h1>
+            <p class="subtitle">Conto com a sua presença para celebrar este momento especial.</p>
+        </header>
+
+        <main>
+            <div class="info-festa">
+                <h2>Informações do Evento</h2>
+                <p><strong>Data:</strong> Sábado, 01 de Novembro de 2025</p>
+                <p><strong>Horário:</strong> A partir das 13:00h</p>
+                <p><strong>Local:</strong> Espaço resenha, Rua Tibiriçá 163, Mesquita - Rio de Janeiro.</p>
+            </div>
+
+            <div class="form-container">
+                <h2>Confirme sua Presença (RSVP)</h2>
+                <p>Por favor, preencha até o dia 25 de outubro.</p>
+                
+                <form id="rsvp-form" action="https://formspree.io/f/xgvnerev" method="POST">
+                    <div class="form-group">
+                        <label for="nome">Seu nome completo:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="presenca">Você irá ao evento?</label>
+                        <select id="presenca" name="presenca" required>
+                            <option value="" disabled selected>-- Selecione uma opção --</option>
+                            <option value="Sim">Sim, estarei lá!</option>
+                            <option value="Nao">Não poderei comparecer.</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">Deixe uma mensagem para o aniversariante (opcional):</label>
+                        <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">Enviar Confirmação</button>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <p>Feito com ❤️</p>
+        </footer>
+    </div>
+</body>
+</html>
